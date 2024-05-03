@@ -22,3 +22,8 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+//route home
+Route::get('/home', function () {
+    return Inertia::render('Home');
+})->name('home');
